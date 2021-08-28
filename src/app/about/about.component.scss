@@ -1,0 +1,571 @@
+@import '../../styles.scss';
+
+body
+{
+    font-family: $font-family2;
+}
+
+/*start section header*/
+.head
+{
+    background-image: url(../../assets/images/features.jpg);
+    background-size: 100% 100%;
+    height: 350px;
+    .cover
+    {
+        background-color: rgba(7, 18, 20, 0.6);
+        height: 100%;
+        width: 100%;
+        .container
+        {
+            h2 
+            {
+                font-size: $fontSize3+5;
+                font-weight: $fontWeight1;
+                color: $mainColor;
+            }
+            nav 
+            {
+                .breadcrumb
+                {
+                    background-color: transparent !important;
+                    font-size: 17px;
+                    a 
+                    {
+                        color: $firstColor;
+                        cursor: pointer;
+                    }
+                    a:hover 
+                    {
+                        color: $mainColor;
+                    }
+                    .active
+                    {
+                        color: $secondColor;
+                    }
+                }
+            }
+        }
+    }
+       
+    
+}
+
+/*end section header*/
+
+/*start section Our site*/
+
+.section-header h2
+{
+    color: $fourColor !important;
+    font-size: $fontSize3;
+}
+.text-center{
+border-radius: 7px;
+i
+{
+    color: $firstColor;
+    transition: all .5s;
+    font-weight: 200 !important;
+}
+i:hover
+{
+    color: $secondColor;
+}
+h4
+{
+    transition: all .5s; 
+}
+h4:hover
+{
+    color: $secondColor;
+    
+}
+p
+{
+    font-size: $fontSize1;
+}
+
+
+   .bg
+   {
+     background-color: $secondColor !important;
+      color: $mainColor !important;
+   }
+   @extend .all;
+
+
+}
+
+/*end section Our site*/
+
+
+
+/*start section testimonials */
+
+.testimonials
+{
+    .parallax
+     {
+	    min-height: 620px;
+        background-color: rgba(0, 2, 2, 0.6);
+        .test-head
+        {
+           h2 
+           {
+            font-size: $fontSize3+5;
+           }
+        }
+        .slider
+        {
+            
+            .card
+            {
+                padding: 10px 0px;
+                background-color: transparent !important;
+                border: solid 3px $mainColor;
+                text-align: center;
+                font-style: italic;
+                letter-spacing: 1;
+               .card-body
+               {
+                  .card-text
+                  {
+                      color: grey;
+                  }
+                  h5
+                  {
+                      color: $firstColor;
+                      font-size: $fontSize2;
+                      font-weight: $fontWeight2;
+                  }
+                  p 
+                  {
+                      color: $secondColor;
+                      font-weight: $fontWeight1;
+                  }
+                 
+               }
+                
+                img 
+                {
+                    border-radius: 50%;
+                    max-width: 120px;
+                    margin: auto !important;
+                   
+                    
+                }
+            }
+            .card:hover
+            {
+                background-color: $mainColor !important;
+                h5 
+                {
+                    color: $firstColor !important;
+                }
+            }
+        }
+            
+   }
+
+}
+
+/*end section testimonials */
+
+
+
+/*start section why choose */
+
+.choose-content
+{
+    @extend .all;
+    
+    h3 
+    {
+        font-size: 40px;
+        color: $fourColor;
+        font-family: $font-family2;
+    }
+    i
+    {
+        padding: 10px;
+        background-color: $firstColor;
+        font-size: 25px;
+        color: $mainColor;
+        border-radius: 4px;
+        transition: all .5s;
+        cursor: pointer;
+    }
+    
+    .media-body
+    {
+        h5 
+        {
+            font-size: $fontSize2;
+            color: $fourColor;
+            transition: all .3s;
+            cursor: pointer;
+        }
+        h5:hover 
+        {
+            color: $secondColor;
+        }
+        p
+        {
+            font-size: $fontSize1;
+            color: $fiveColor;
+            font-family: $font-family2;
+        }
+    }
+    
+}
+
+.choose-content:hover i 
+{
+    background-color: $secondColor;
+    color: $mainColor;
+}
+
+
+/*end section why choose */
+
+/*start section progress*/
+
+.progress
+{
+    background-image: linear-gradient(to right , $firstColor , $secondColor);
+    width: 100%;
+    height:auto;
+    
+    .col-lg
+    {
+        position: relative;
+    }
+
+    .circle strong 
+    {
+        position: absolute;
+        top: 30px;
+        right: 21%;
+        width: 100%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 25px;
+    }
+    .circle p
+    {
+        font-size: 17px;
+        font-family: $font-family2;
+        color: #fff;
+        position: relative;
+
+    }
+    .circle
+    {
+        .p1 
+        {
+            
+            right: 12px !important;
+        }
+        .p2
+        {
+            
+            right: 27px !important;
+        }
+        .p3
+        {
+           
+            right: 10px !important;
+        }
+        .p4
+        {
+            
+            left:  5px !important;
+        }
+        .p5
+        {
+            
+            right: 20px !important;
+        }
+    } 
+
+
+}
+
+/*end section progress*/
+
+
+/*start media query 1200 to 1024 */
+
+@media (max-width : 1200px) and (min-width :1024px)
+{
+    /*start section progress*/
+    .circle strong 
+    {
+        right: 15% !important;  
+    }
+    /*end section progress*/
+    
+}
+
+/*end media query 1200 to 1024 */
+
+
+
+/* start media query 1024 to 992*/
+@media (max-width : 1024px) and (min-width :992px)
+{
+    /*start section progress*/
+    .circle strong 
+    {
+        right: 15% !important;  
+    }
+    /*end section progress*/
+}
+/* end media query 1024 to 992*/
+
+
+
+
+/* start media query 992 to 768*/
+
+@media (max-width : 992px) and (min-width : 768px)
+{   
+    /*start section testimonials*/
+    .testimonials
+    {
+        h2
+        {
+            font-size: $fontSize2+15 !important;
+        }
+        .card
+        {
+            margin: auto !important;
+        }
+    }
+   /*end section testimonials*/
+
+   /*statt section progress*/
+   .row
+    {
+        .col-lg 
+        {
+            position: relative;
+            left: 16% !important;
+            margin-bottom: 10px;
+            .five
+            {
+                position: relative;
+                left: 50% !important;
+            }
+        }
+        .circle strong 
+        {
+           right: 32% !important;  
+        }
+    }
+   /*end section progress*/ 
+
+   
+}
+
+/* end media query 992 to 768*/
+
+/* start media query 768 to 576*/
+
+@media (max-width : 768px) and (min-width : 576px)
+{   
+     /*start section testimonials*/
+     .testimonials
+     {
+         h2
+         {
+             font-size: $fontSize2+15 !important;
+         }
+         .card
+         {
+             margin: auto !important;
+         }
+     }
+     /*end section testimonials*/
+
+     /*start section progress*/
+    .row
+    {
+        .col-lg 
+        {
+            position: relative;
+            left: 40% !important;
+            margin-bottom: 10px;
+            
+        }
+        .circle strong 
+        {
+           right: 38% !important;  
+        }
+    }
+    /*end section progress*/
+  
+}
+
+/* end media query 768 to 576*/
+
+
+
+/* start media query 576 to 450*/
+@media (max-width : 576px) and (min-width :450px)
+{
+    /*start section testimonials*/
+    .testimonials
+    {
+        h2
+        {
+            font-size: $fontSize2+15 !important;
+        }
+        .card
+        {
+            margin: auto !important;
+        }
+    }
+   /*end section testimonials*/
+   
+    /*start section progress*/
+    .row
+    {
+        .col-lg 
+        {
+            position: relative;
+            left: 40% !important;
+            margin-bottom: 10px;
+            
+        }
+        .circle strong 
+        {
+           right: 37% !important;  
+        }
+    }
+    /*end section progress*/
+
+}
+/* end media query 576 to 450*/
+
+
+
+/* start media query 450to 300*/
+@media (max-width : 450px) and (min-width:300px)
+{
+
+    /*start section testimonials*/
+    .testimonials
+    {
+        h2
+        {
+            font-size: $fontSize2+10 !important;
+        }
+        .card
+        {
+            margin: auto !important;
+            
+            width: 80% !important;
+            .card-body
+            {
+                .card-text
+                {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+    /*end section testimonials*/
+     /*start section Our Site*/
+     .section-header
+     {
+         h2
+         {
+             font-size: $fontSize2+10;
+         }
+     }
+    /*end section Our Site*/
+   
+    /*start section progress*/
+    .row
+    {
+        .col-lg 
+        {
+            position: relative;
+            left: 40% !important;
+            margin-bottom: 10px;
+            
+        }
+        .circle strong 
+        {
+           right: 33% !important;  
+        }
+    }
+    /*end section progress*/
+    
+}
+/* end media query 450 to 300*/
+
+
+
+
+/* start media query 300 to zero*/
+
+@media(max-width :300px) and (min-width: 0px)
+{
+    /*start section Our Site*/
+    .section-header
+    {
+        h2
+        {
+            font-size: $fontSize2+10;
+        }
+    }
+   /*end section Our Site*/
+
+   /*start section testimonials */
+    .testimonials
+    {
+        h2
+        {
+            font-size: $fontSize2+10 !important;
+        }
+        .card
+        {
+            margin: auto !important;
+            
+            width: 80% !important;
+            .card-body
+            {
+                .card-text
+                {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+    /*end section testimonials */
+
+    /*start section progress*/
+    .row
+    {
+        .col-lg 
+        {
+            position: relative;
+            left: 30% !important;
+            margin-bottom: 10px;
+            
+        }
+        .circle strong 
+        {
+           right: 28% !important;  
+        }
+    }
+    /*end section progress*/
+    
+   
+}
+
+
+/* end media query 300 to zero*/

@@ -1,0 +1,92 @@
+@import '../../styles.scss';
+
+body
+{
+    font-family: $font-family2;
+}
+
+/*start section header*/
+.head
+{
+    background-image: url(../../assets/images/features.jpg);
+    background-size: 100% 100%;
+    height: 350px;
+    .cover
+    {
+        background-color: rgba(7, 18, 20, 0.6);
+        height: 100%;
+        width: 100%;
+        .container
+        {
+            h2 
+            {
+                font-size: $fontSize3+5;
+                font-weight: $fontWeight1;
+                color: $mainColor;
+            }
+            nav 
+            {
+                .breadcrumb
+                {
+                    background-color: transparent !important;
+                    font-size: 17px;
+                    a 
+                    {
+                        color: $firstColor;
+                        cursor: pointer;
+                    }
+                    a:hover 
+                    {
+                        color: $mainColor;
+                    }
+                    .active
+                    {
+                        color: $secondColor;
+                    }
+                }
+            }
+        }
+    }
+       
+    
+}
+
+/*end section header*/
+
+/*start section drugs*/
+
+.drugs
+{
+    .card
+    {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+       img 
+       {
+           border-top-left-radius: 10px;
+           border-top-right-radius: 10px;
+       }
+       .card-body
+       {
+           .card-title
+           {
+               font-size: $fontSize2+3;
+               color: $thridColor;
+               cursor: pointer;
+           }
+           .card-title:hover
+           {
+               
+               color: $firstColor;
+               transition: all .3s;
+           }
+           p 
+           {
+               color: $fiveColor;
+           }
+           @extend .all;
+       }
+    }
+}
+
+/*end section drugs*/

@@ -1,0 +1,135 @@
+@import '../../styles.scss';
+
+body
+{
+    font-family: $font-family2;
+}
+
+/*start section header*/
+.head
+{
+    background-image: url(../../assets/images/features.jpg);
+    background-size: 100% 100%;
+    height: 350px;
+    .cover
+    {
+        background-color: rgba(7, 18, 20, 0.6);
+        height: 100%;
+        width: 100%;
+        .container
+        {
+            h2 
+            {
+                font-size: $fontSize3+5;
+                font-weight: $fontWeight1;
+                color: $mainColor;
+            }
+            nav 
+            {
+                .breadcrumb
+                {
+                    background-color: transparent !important;
+                    font-size: 17px;
+                    a 
+                    {
+                        color: $firstColor;
+                        cursor: pointer;
+                    }
+                    a:hover 
+                    {
+                        color: $mainColor;
+                    }
+                    .active
+                    {
+                        color: $secondColor;
+                    }
+                }
+            }
+        }
+    }
+       
+    
+}
+
+/*end section header*/
+
+/*start section contact*/
+
+.contact
+{
+    
+    background-image: url(../../assets/images/map-texture.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-top: 60px !important;
+    .contact-head
+    {
+        h2 
+        {
+            font-size: $fontSize3+5px;
+            color: $fourColor;
+        }
+    }
+    .contact-content
+    {
+        input 
+        {
+            height: 50px;
+            font-size: 18px;
+            border: 2px solid #e7eaeb;
+            font-style: italic;
+            color: #1f232b;
+        }
+        .text-area
+        {
+            font-size: 18px;
+            border: 2px solid #e7eaeb;
+            font-style: italic;
+            color: #1f232b;
+        }
+    }
+    @extend .all;
+    button 
+    {
+        border: solid 2px $secondColor !important;
+        padding: 10px 25px !important;
+    }
+
+}
+
+/*end section contact*/
+
+
+/*media query from 450 to 300*/
+@media(max-width:450px) and (min-width:300)
+{
+    /*start section contact*/
+    .contact
+    {
+        h2 
+        {
+            font-size: $fontSize2+10 !important;
+        }
+    }
+    /*end section contact*/
+}
+
+/*media query from 450 to 300*/
+
+/*media query from 300 to 0*/
+@media(max-width:300px) and (min-width:0)
+{
+    /*start section contact*/
+    .contact
+    {
+        h2 
+        {
+            font-size: $fontSize2+10 !important;
+        }
+    }
+    
+    /*end section contact*/
+}
+
+/*media query from 300 to 0*/

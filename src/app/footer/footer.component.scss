@@ -1,0 +1,85 @@
+@import '../../styles.scss';
+
+
+body 
+{
+    font-family:$font-family2 ;
+}
+
+footer
+{
+    background-color: $fourColor;
+    width: 100%;
+    height: auto;
+    .footer-head
+    {
+        p 
+        {
+            color: $fiveColor;
+            
+        }
+        .text-white
+        {
+            font-size: 14px;
+            .fa-facebook-f:hover
+            {
+                color: #4267B2;
+            }
+            .fa-twitter:hover
+            {
+                color: #1DA1F2;
+            }
+            .fa-google:hover
+            {
+                color: #DB4437;
+            }
+            .fa-linkedin-in:hover
+            {
+                color: #2867B2;
+            }
+            .fa-youtube:hover
+            {
+                color: #bb0000;
+            }
+
+        }
+        h2
+        {
+            font-size: $fontSize2+10;
+            color: $mainColor;
+        }
+        
+    }
+    .card-footers
+    {          
+        p 
+        {               
+            color: $fiveColor;
+            i
+            {
+                color: $firstColor;
+            }
+        }
+        .second
+        {
+            color: $secondColor;
+        }
+        .second:hover
+        {
+            color: $mainColor;
+        }
+    }
+
+    
+    .footer-cover
+    {
+        background-color: #0e292e;
+        width: 100%;
+        height: auto;
+        p 
+        {
+            color: $fiveColor;
+            font-weight: 400;
+        }
+    }
+}
